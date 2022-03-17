@@ -43,8 +43,8 @@ const App = () => {
 		{ task: ' Filter By Gender ', status: true },
 		{ task: ' Pagination ', status: true },
 		{ task: ' Reset Filter ', status: true },
-		{ task: ' Deploy on AWS ', status: true, link: '#' },
-		{ task: ' Deploy on Netlify ', status: true, link: '#' },
+		{ task: ' Deploy on AWS ', status: true, link: 'http://ajaib.s3-website-ap-southeast-1.amazonaws.com' },
+		{ task: ' Deploy on Netlify ', status: true, link: 'https://ajaib.netlify.app' },
 		{ task: ' Integration / Unit Testing ', status: false },
 		{ task: ' Sort Functionality ', status: false },
 	]

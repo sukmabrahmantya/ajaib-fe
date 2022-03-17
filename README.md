@@ -5,8 +5,8 @@ This project is the assessment of the [Ajaib's Company](https://ajaib.co.id) wit
 
 ## Link Deployment
 
-[Amazon Web Service](#)\
-[Netlify](#)
+[Amazon Web Service](http://ajaib.s3-website-ap-southeast-1.amazonaws.com)\
+[Netlify](https://ajaib.netlify.app)
 ## Available Scripts
 
 In the project directory, you can run:
