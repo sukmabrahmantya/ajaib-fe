@@ -67,11 +67,11 @@ const users = (state = initialState, action) => {
 			if (keyword !== '' && gender !== 'all') {
 				console.log(`Filters 1 == keyword: ${keyword} | gender : ${gender}`)
 				tempData = state.users.results.filter((el) => 
-					(el.login.username == keyword ||
-					el.name.title == keyword ||
-					el.name.first == keyword ||
-					el.name.last == keyword ||
-					el.email == keyword) &&
+					(el.login.username === keyword ||
+					el.name.title === keyword ||
+					el.name.first === keyword ||
+					el.name.last === keyword ||
+					el.email === keyword) &&
 					el.gender === gender);
 				rows = tempData.slice((page - 1) * limit, page * limit);
 				isFilter = true;
@@ -80,11 +80,11 @@ const users = (state = initialState, action) => {
 			} else if (keyword !== '' && gender === 'all') {
 				console.log(`Filters 2 == keyword: ${keyword} | gender : ${gender}`)
 				tempData = state.users.results.filter((el) => 
-					el.login.username == keyword ||
-					el.name.title == keyword ||
-					el.name.first == keyword ||
-					el.name.last == keyword ||
-					el.email == keyword);
+					el.login.username === keyword ||
+					el.name.title === keyword ||
+					el.name.first === keyword ||
+					el.name.last === keyword ||
+					el.email === keyword);
 				rows = tempData.slice((page - 1) * limit, page * limit);
 				isFilter = true;
 
