@@ -39,14 +39,15 @@ const App = () => {
   })
 
 	const listOfTask = [
+		{ task: ' Third Party API Randomuser ', status: true },
 		{ task: ' Search By Keyword (Username, Name or Email) ', status: true },
 		{ task: ' Filter By Gender ', status: true },
 		{ task: ' Pagination ', status: true },
 		{ task: ' Reset Filter ', status: true },
 		{ task: ' Deploy on AWS ', status: true, link: 'http://ajaib.s3-website-ap-southeast-1.amazonaws.com' },
 		{ task: ' Deploy on Netlify ', status: true, link: 'https://ajaib.netlify.app' },
-		{ task: ' Integration / Unit Testing ', status: false },
-		{ task: ' Sort Functionality ', status: false },
+		// { task: ' Integration / Unit Testing ', status: false },
+		// { task: ' Sort Functionality ', status: false },
 	]
 
   useEffect(() => {
@@ -120,7 +121,7 @@ const App = () => {
           <Breadcrumb.Item>Home</Breadcrumb.Item>
           <Breadcrumb.Item>Example Page</Breadcrumb.Item>
         </Breadcrumb>
-        <Typography.Title level={3}>Example With Search and Filter</Typography.Title>
+        <Typography.Title level={3}>Dashboard With Search and Filter</Typography.Title>
         <Row gutter={[8,8]}>
           <Col span={5}>
 						<Tooltip placement="bottomLeft" title="You can search using username, name or email.">
@@ -166,7 +167,7 @@ const App = () => {
         </Row>
 				<Modal
 					centered 
-					title="Ajaib Personal Project | Brahmantya Prajanji" 
+					title="Personal Project | Brahmantya Prajanji" 
 					closable={false}
 					visible={showModal} 
 					cancelButtonProps={{ style: { display: 'none' } }}
